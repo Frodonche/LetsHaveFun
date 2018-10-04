@@ -45,7 +45,7 @@ mainmenu () {
             mainmenu
         elif [ "$mainmenuinput" = "i" ];then
             clear
-            sh install.sh
+            sh install.sh $lePath
             exit
         elif [ "$mainmenuinput" = "c" ];then
             clear

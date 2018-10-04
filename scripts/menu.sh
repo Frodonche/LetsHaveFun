@@ -12,7 +12,7 @@ echo ""
 mainmenu () {
   echo "========= FUN ========="
   echo "1 : Star Wars - Wanna watch some movie ?"
-  echo "2 : None"
+  echo "2 : Konsole - Open multiple konsoles"
   echo "3 : None"
   echo "4 : None"
   echo "5 : None"
@@ -28,8 +28,7 @@ mainmenu () {
   if [ "$mainmenuinput" = "1" ]; then
             sh starWars.sh
         elif [ "$mainmenuinput" = "2" ]; then
-            clear
-            echo "Not done yet."
+            sh konsole.sh
             mainmenu
         elif [ "$mainmenuinput" = "3" ]; then
             clear
@@ -45,7 +44,7 @@ mainmenu () {
             mainmenu
         elif [ "$mainmenuinput" = "i" ];then
             clear
-            sh install.sh
+            sh install.sh $lePath
             exit
         elif [ "$mainmenuinput" = "c" ];then
             clear

@@ -16,4 +16,4 @@ echo "Before exiting, remember to type the following command : "
 echo "history -c"
 
 cheminInstall='/usr/bin/tempFun'
-rm $cheminInstall
+rm -r $cheminInstall
